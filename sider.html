@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <aside class="container__left">
+            <div class="none">
+                <div class="container__left__logo">
+                    <div class="logo">
+                        <img src="https://fakeimg.pl/150x150" alt="">
+                    </div>
+                    <h1>john d.</h1>
+                </div>
+                <nav class="container__left__menu">
+                    <ul>
+                        <li><i class="fas fa-tachometer-alt"></i> <span>dashboard</span> </li>
+                        <li><i class="fas fa-briefcase"></i> <span>customers</span> </li>
+                        <li><i class="fas fa-user-friends"></i> <span>user</span> </li>
+                        <li><i class="fas fa-tools"></i> <span>setting</span> </li>
+                    </ul>
+                </nav>
+            </div>
+
+            <button class="btn-open" onclick="slide()">&#9776</button>
+        </aside>
+        <div class="container__right">
+
+        </div>
+    </div>
+    
+    <script>
+        const SIDEBAR = document.getElementsByClassName('container__left')[0];
+        const CONTENT = document.getElementsByClassName('container__right')[0];
+        const NONE = document.getElementsByClassName('none')[0];
+        let flag = false;
+        function slide() {
+            if (flag == false) {
+                console.log('aloalo');
+                flag = !flag;
+                SIDEBAR.style.width = 0;
+                NONE.style.opacity = 0;
+                CONTENT.style.marginLeft = 0;
+            } else {
+                flag = !flag;
+                console.log('aloalo');
+                SIDEBAR.style.width = '15%';
+                NONE.style.opacity = 1;
+                CONTENT.style.marginLeft = '15%';
+            }
+        }
+    </script>
+</body>
+
+</html>

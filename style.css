@@ -113,16 +113,15 @@ a {
   text-transform: capitalize;
   color: white;
 }
-.mega-menu.--child > .row:nth-child(1) {
+.mega-menu.--child .--title {
   background-color: #365670;
-  padding: 15px;
 }
-.mega-menu.--child > .row:nth-child(2) {
+.mega-menu.--child > .row {
   background-color: #547787;
   padding: 15px;
 }
 
-.mega-menu.--child > .row:nth-child(2) > .col-8 .col-4 ul {
+.list-service {
   display: flex;
   flex-direction: column;
   justify-content: space-between;

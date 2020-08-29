@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+        integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="nav-container">
+        <ul class="menu">
+            <li class="menu__item"><a href="#"><i class="fas fa-home"></i> home</a></li>
+            <li class="menu__item"><a href="#"><i class="fas fa-cogs"></i> flyout <i class="fas fa-angle-double-down" style="margin-left: auto"></i></a>
+                <ul class="menu --child">
+                    <li class="menu__item"><a href="#">flyout right</a>
+                        <ul class="menu --child --right">
+                            <li class="menu__item"><a href="#">mobile</a></li>
+                            <li class="menu__item"><a href="#">computer</a></li>
+                            <li class="menu__item"><a href="#">watch</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu__item"><a href="#">flyout left</a>
+                        <ul class="menu --child --left">
+                            <li class="menu__item"><a href="#">mobile</a></li>
+                            <li class="menu__item"><a href="#">computer</a></li>
+                            <li class="menu__item"><a href="#">watch</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu__item"><a href="#">no flyout</a></li>
+                </ul>
+            </li>
+            <li class="menu__item"><a href="#"><i class="fas fa-cogs"></i> services</a></li>
+            <li class="menu__item"><a href="#"><i class="fas fa-briefcase"></i> portfolio</a></li>
+            <li class="menu__item --static"><a href="#"><i class="fas fa-list"></i> mega menu</a>
+                <div class="mega-menu --child">
+                    <div class="row">
+                        <div class="col-4">
+                            <h5>feature</h5>
+                        </div>
+                        <div class="col-8 row">
+                            <div class="col-4">
+                                <h5>standers</h5>
+                            </div>
+                            <div class="col-4">
+                                <h5>DESCRIPTION</h5>
+                            </div>
+                            <div class="col-4">
+                                <h5>ICON + DESCRIPTION</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-4">
+                            <img src="https://via.placeholder.com/300x250" alt="">
+                        </div>
+                        <div class=" col-8 row">
+                            <div class="col-4">
+                                <ul>
+                                    <li><a href="#"> mobile</a></li>
+                                    <li> <a href="#">computer</a></li>
+                                    <li> <a href="#">watch</a></li>
+                                    <li> <a href="#">laptop</a></li>
+                                    <li> <a href="#">camera</a></li>
+                                    <li> <a href="#">I pad</a></li>
+                                </ul>
+                                <button class="btn-view-more">View More</button>
+                            </div>
+                            <div class="col-4">
+                                <ul>
+                                    <li><a href="">Women</a>
+                                        <div class="comment">Description of Women</div>
+                                    </li>
+                                    <li><a href="">Men</a>
+                                        <div class="comment">Description of men Cloths</div>
+                                    </li>
+                                    <li><a href="">Kids</a>
+                                        <div class="comment">Description of Kids Cloths</div>
+                                    </li>
+                                    <li><a href="">Others</a>
+                                        <div class="comment">Description of Others Cloths</div>
+                                    </li>
+                                </ul>
+                                <button class="btn-view-more">View More</button>
+                            </div>
+                            <div class="col-4">
+                                <ul class="icon-list">
+                                    <li><a href="#"><i class="fas fa-cogs"></i> menu text</a></li>
+                                    <li><a href="#"><i class="fas fa-cogs"></i> menu text</a></li>
+                                    <li><a href="#"><i class="fas fa-cogs"></i> menu text</a></li>
+                                    <li><a href="#"><i class="fas fa-cogs"></i> menu text</a></li>
+                                    <li><a href="#"><i class="fas fa-cogs"></i> menu text</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="menu__item"><a href="#"><i class="fas fa-bullhorn"></i> blog</a></li>
+            <li class="menu__item"><a href="#"><i class="fas fa-image"></i> images</a></li>
+            <li class="menu__item"><a href="#"><i class="fas fa-envelope"></i> contact</a></li>
+        </ul>
+    </nav>
+</body>
+
+</html>
